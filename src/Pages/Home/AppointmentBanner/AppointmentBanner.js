@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import doctor from '../../../images/doctor.png';
 import bg from '../../../images/appointment-bg.png';
-import { Button, Typography } from '@mui/material';
+import { Button, Container, Typography } from '@mui/material';
 
 
 const appointmentBanner = {
@@ -16,7 +16,7 @@ const appointmentBanner = {
 
 const AppointmentBanner = () => {
     return (
-        <Box style={appointmentBanner} sx={{ flexGrow: 1 }}>
+        <Container style={appointmentBanner} sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
                     <img
@@ -44,7 +44,7 @@ const AppointmentBanner = () => {
                     </Box>
                 </Grid>
             </Grid>
-        </Box>
+        </Container>
     );
 };
 

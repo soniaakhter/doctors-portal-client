@@ -1,14 +1,16 @@
 import React from 'react';
 import Navigation from '../../Pages/Shared/Navigation/Navigation';
 import AppointmentHeader from '../AppointmentHeader/AppointmentHeader';
-import AvailableAppointment from '../AvailableAppointment/AvailableAppointment';
+import AvailableAppointments from '../AvailableAppointments/AvailableAppointments';
+
 
 const Appointment = () => {
+    const [date, setDate] = React.useState(new Date());
     return (
         <div>
             <Navigation />
-            <AppointmentHeader />
-            <AvailableAppointment />
+            <AppointmentHeader date={date} setDate={setDate} />
+            <AvailableAppointments date={date} />
             
         </div>
     );

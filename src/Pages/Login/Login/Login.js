@@ -19,6 +19,9 @@ const Login = () => {
         alert("hello")
         e.preventDefault()
     }
+    
+
+    
     return (
         <Container>
             <Grid container spacing={2}>
@@ -44,11 +47,14 @@ const Login = () => {
                         
                         <Button sx={{ width: '75%', m: 1 }} type='submit' variant="contained">Login</Button>
 
+
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/register">
                             <Button variant="text">New User? Please Register</Button>
                         </NavLink>
+
+                        
                         
                     </form>
 
@@ -56,6 +62,7 @@ const Login = () => {
                 <Grid item xs={12} md={6}>
                     <img style={{width:'100%'}} src={login} />
                 </Grid>
+
 
             </Grid>
         </Container>
